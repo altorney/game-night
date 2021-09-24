@@ -3,7 +3,7 @@ import './main.css';
 import { connect } from 'react-redux';
 
 function Content(props) {
-  console.log(props);
+  console.log('into content', props);
   return (
     <div className="content">
       {props.games.map((game) => {
@@ -20,3 +20,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Content);
+
+// to dispath https://www.youtube.com/watch?v=40pWMVMnftc
