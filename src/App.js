@@ -6,8 +6,6 @@ import Maintenance from 'components/Maintenance/maintenance';
 import { connect } from 'react-redux';
 
 function App(props) {
-  // console.log('props in app', props);
-
   return (
     <Router>
       <div className="App">
@@ -29,7 +27,6 @@ function App(props) {
 }
 
 const mapStateToProps = (state) => {
-  // console.log('mapStateToProps:', state);
   return {
     loading: state.loading,
     error: state.error,
@@ -37,4 +34,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(App);
-// export default App;

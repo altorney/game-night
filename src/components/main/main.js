@@ -20,5 +20,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Content);
-
-// to dispath https://www.youtube.com/watch?v=40pWMVMnftc
