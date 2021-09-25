@@ -1,0 +1,20 @@
+.card-wrapper {
+  width: calc(50% - 20px);
+  padding-bottom: 20px;
+}
+
+.card-wrapper:nth-child(odd) {
+  padding-right: 20px;
+}
+.game-card {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(35, 35, 238);
+  border-radius: 6px;
+  height: 80px;
+  color: rgb(68, 216, 214);
+  flex-basis: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+}

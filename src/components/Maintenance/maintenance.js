@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { addGame } from '../../actions/index';
 import { deleteGame } from '../../actions/index';
+import './maintenance.css';
 
 function Maintenance(props) {
   function handleAddClick() {
@@ -19,20 +20,31 @@ function Maintenance(props) {
 
   return (
     <div>
-      maintenance
-      {props.loading && '...loading'}
-      <div className="xxcontent">
+      {/* {props.loading && '...loading'} */}
+      <div className="maintenance-games-wrapper">
+        Games
         {props.games.map((game) => {
           return (
-            <div key={game.id}>
-              {game.title}-{game.id}
-              <button onClick={() => handleDeleteClick(game.id)}>Delete game</button>
+            <div className="game-row" key={game.id}>
+              <div className="game-title">{game.title}</div>
+              <div>
+                <button className="delete" onClick={() => handleDeleteClick(game.id)}></button>
+              </div>
             </div>
           );
         })}
       </div>
-      <input type="text" id="new-game" ref={(el) => (newGame = el)} />
-      <button onClick={handleAddClick}>Add new game</button>
+      <div className="maintenance-add-wrapper">
+        Add a new game
+        <div className="add-game-row">
+          <div className="add-input">
+            <input type="text" id="new-game" ref={(el) => (newGame = el)} />
+          </div>
+          <div>
+            <button className="add" onClick={handleAddClick} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

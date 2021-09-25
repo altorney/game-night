@@ -1,8 +1,9 @@
 import { LOADING, SUCCESS, FAILURE, SUCCESSFUL_UPDATE, SUCCESSFUL_DELETE } from '../actions/index';
 const initState = {
   games: [
-    { id: 1, title: 'monopoly' },
-    { id: 2, title: 'foot and mouth1' },
+    { id: 1, title: 'monopoly', selected: false },
+    { id: 2, title: 'foot and mouth1', selected: false },
+    { id: 3, title: 'foot and mouth2', selected: false },
   ],
   loading: false,
   error: '',

@@ -1,7 +1,10 @@
+import './game-card.css';
+
 function GameCard(props) {
+  const title = props.game.selected ? props.game.title : '?';
   return (
-    <div>
-      <div>{props.game.title}</div>
+    <div className="card-wrapper">
+      <div className="game-card">{title}</div>
     </div>
   );
 }
