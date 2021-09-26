@@ -53,6 +53,7 @@
   height: 30px;
   width: 30px;
   background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
 }
 
@@ -63,4 +64,9 @@
   width: 30px;
   background-repeat: no-repeat;
   border: none;
+}
+
+.reset {
+  height: 30px;
+  border-radius: 6px;
 }

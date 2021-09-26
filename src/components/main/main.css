@@ -1,8 +1,5 @@
 .content {
-  /* border: 1px solid blue; */
-  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
-  /* align-content: space-between; */
 }

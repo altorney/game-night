@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
-import { addGame } from '../../actions/index';
-import { deleteGame } from '../../actions/index';
+import { addGame, deleteGame, resetGames } from '../../actions/index';
 import './maintenance.css';
 
 function Maintenance(props) {
@@ -16,6 +15,11 @@ function Maintenance(props) {
   function handleDeleteClick(id) {
     props.deleteGame(id);
   }
+
+  function handleResetClick() {
+    props.resetGames();
+  }
+
   let newGame = null;
 
   return (
@@ -44,6 +48,11 @@ function Maintenance(props) {
             <button className="add" onClick={handleAddClick} />
           </div>
         </div>
+        <div>
+          <button className="reset" onClick={handleResetClick}>
+            Reset cards
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -60,6 +69,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addGame: (game) => dispatch(addGame(game)),
     deleteGame: (id) => dispatch(deleteGame(id)),
+    resetGames: (id) => dispatch(resetGames()),
   };
 };
 

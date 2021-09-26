@@ -3,7 +3,6 @@ import './main.css';
 import { connect } from 'react-redux';
 
 function Content(props) {
-  console.log('into content', props);
   return (
     <div className="content">
       {props.games.map((game) => {
