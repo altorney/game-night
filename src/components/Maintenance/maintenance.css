@@ -69,4 +69,6 @@
 .reset {
   height: 30px;
   border-radius: 6px;
+  background-color: rgb(7, 177, 50);
+  color: #2323ee;
 }
