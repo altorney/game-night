@@ -24,7 +24,6 @@ function Maintenance(props) {
 
   return (
     <div>
-      {/* {props.loading && '...loading'} */}
       <div className="maintenance-games-wrapper">
         Games
         {props.games.map((game) => {
@@ -50,7 +49,7 @@ function Maintenance(props) {
         </div>
         <div>
           <button className="reset" onClick={handleResetClick}>
-            Reset cards
+            Reset games
           </button>
         </div>
       </div>

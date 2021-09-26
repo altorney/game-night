@@ -11,8 +11,7 @@ function App(props) {
       <div className="App">
         <Header />
         {props.loading && 'loading...'}
-        {props.error && 'err...'}
-        {/* {!props.loading && !props.error && 'success'} */}
+        {props.error && 'Sorry there was an error'}
         <Switch>
           <Route path="/" exact>
             <Content />

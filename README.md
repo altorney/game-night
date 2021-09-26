@@ -1,3 +1,6 @@
+# Game Night
+
+This is an app to allow users to pick a game to play from a  randomized predefined list of games. Games can be added or removed from the maintenance page. The "reset games" button resets the selection process to hide all selected games. The data that supports the app is stored in a JSONBin.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
